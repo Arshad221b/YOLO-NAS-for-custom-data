@@ -22,3 +22,4 @@ After training, model is ready to use with flask_app. The folder flask_app conta
 1) Original Code built for fall detection: https://github.com/AarohiSingla
 2) Dataset for traffic sign detection: https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format
 3) YOLO-NAS: https://learnopencv.com/yolo-nas/
+4) Video for demo: https://www.youtube.com/watch?v=40xZVEFVBuE
