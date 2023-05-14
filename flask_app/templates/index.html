@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image or Video</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card {
+            max-width: 400px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 40px 30px;
+        }
+
+        .card h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .upload-form {
+            text-align: center;
+        }
+
+        .upload-form label {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .upload-form input[type="file"] {
+            display: none;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .upload-btn-label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .upload-btn-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Upload Image or Video</h1>
+            <form class="upload-form" method="POST" action="/upload" enctype="multipart/form-data">
+                <label for="file">Select a file:</label>
+                <label for="file" class="upload-btn">
+                    <span class="upload-btn-icon">&#x2B;</span>
+                    <span class="upload-btn-label">Choose File</span>
+                </label>
+                <input type="file" name="file" id="file">
+                <input type="submit" value="Upload" class="upload-btn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

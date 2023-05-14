@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Successful</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .text {
+            font-family: Arial, sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+            text-transform: uppercase;
+            animation: scale-in 1s ease-in-out;
+        }
+        
+        @keyframes scale-in {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .text::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #007bff;
+            margin: 10px auto;
+            animation: line-grow 1s ease-in-out forwards;
+        }
+        
+        @keyframes line-grow {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        .sparkle {
+            position: relative;
+            display: inline-block;
+            animation: sparkle 2s linear infinite;
+        }
+        
+        .sparkle::after {
+            content: '★';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-size: 48px;
+            color: #ffc107;
+            opacity: 0;
+            animation: sparkle-fade 2s linear infinite;
+        }
+        
+        @keyframes sparkle {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes sparkle-fade {
+            0%,
+            50%,
+            100% {
+                opacity: 0;
+            }
+            25%,
+            75% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <span class="sparkle">Successful</span>
+            <span class="sparkle"> Check out the output folder</span>
+        </div>
+</body>
+</html>
