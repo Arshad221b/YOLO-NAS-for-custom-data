@@ -14,7 +14,8 @@ A project that is built on a YOLO-NAS object detection model. This project provi
 ## Training and Validation 
 Use traffic.ipynb to train and and validate custom model. 
 
-This notebook was originally built by https://github.com/AarohiSingla for fall detection
+This notebook was originally built by https://github.com/AarohiSingla for fall detection. 
+Currently the super_gradients library only supports python 3.9>=.
 
 
 ## Inference 
