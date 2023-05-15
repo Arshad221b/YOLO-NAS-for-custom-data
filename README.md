@@ -1,5 +1,5 @@
 # YOLO-NAS object detection on custom dataset 
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 A project that is built on a YOLO-NAS object detection model. This project provides a flow to build and train a custom YOLO-NAS model for custom objects. In this particular case the model is trained to detect signs on the street and classify them into four categories. 
 
 ## DEMO
