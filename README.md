@@ -1,8 +1,7 @@
 # YOLO-NAS object detection on custom dataset 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-A project that is built on a YOLO-NAS object detection model. This project provides a flow to build and train a custom YOLO-NAS model for custom objects. In this particular case the model is trained to detect signs on the street and classify them into four categories. 
+This project is centered around a YOLO-NAS (You Only Look One - Neural Architecture Search) object detection model. It offers a comprehensive guide for building and training a custom YOLO-NAS model tailored to detect specific objects. In this instance, the model is trained to recognize street signs and classify them into four categories.
 
 ## DEMO
 <div align='center'>
@@ -12,17 +11,14 @@ A project that is built on a YOLO-NAS object detection model. This project provi
 </div>
 
 ## Training and Validation 
-Use traffic.ipynb to train and and validate custom model. 
-
-This notebook was originally built by https://github.com/AarohiSingla for fall detection. 
-Currently the super_gradients library only supports python 3.9>=.
+Utilize the traffic.ipynb notebook for training and validating the custom model. This notebook, originally crafted by AarohiSingla for fall detection, requires Python 3.9 or higher.
 
 
 ## Inference 
-After training, model is ready to use with flask_app. The folder flask_app contains app.py. User can upload images or videos to for object detection. Set config in the config folder. 
+Once trained, the model is ready for use with the flask_app. The flask_app folder contains app.py, allowing users to upload images or videos for object detection. Configure settings in the config folder. 
 
 ## References and Datasets 
 1) Original Code built for fall detection: https://github.com/AarohiSingla
 2) Dataset for traffic sign detection: https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format
 3) YOLO-NAS: https://learnopencv.com/yolo-nas/
-4) Video for demo: https://www.youtube.com/watch?v=40xZVEFVBuE
+4) Video demo: https://www.youtube.com/watch?v=40xZVEFVBuE
